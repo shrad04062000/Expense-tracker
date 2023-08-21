@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>9</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ExpenseTracker.Common\ExpenseTracker.Common.csproj" />
+      <ProjectReference Include="..\ExpenseTracker.Contracts\ExpenseTracker.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Entities\PersonalType.cs" />
+      <Compile Remove="Entities\IWorkspaceType.cs" />
+      <Compile Remove="Entities\BusinessType.cs" />
+    </ItemGroup>
+
+</Project>

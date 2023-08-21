@@ -1,0 +1,23 @@
+﻿
+/* Toast notification */
+
+.notyf
+{
+  padding: 40px;
+}
+
+.notyf__toast {
+  max-width: 600px !important;
+}
+
+.notyf__ripple {
+  height: 50000px !important;
+  width: 50000px !important;
+}
+
+
+/* Template */
+
+.page-wrapper{
+  min-height: 85vh;
+}
